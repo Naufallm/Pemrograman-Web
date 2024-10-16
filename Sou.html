@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sou Official Website</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e6f3f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: white;
+            padding: 20px 0;
+            border-bottom: 5px solid #a8d8e0;
+            text-align: center;
+        }
+        .logo {
+            text-align: cen;
+            padding-left: 20px;
+        }
+        .logo img {
+            height: 40px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            background-color: #a8d8e0;
+            padding: 20px;
+        }
+        .slider-container {
+            flex: 2;
+            position: relative;
+            overflow: hidden;
+        }
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .slide img {
+            width: 100%;
+            height: auto;
+        }
+        .slide-content {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: #333;
+        }
+        .slider-nav {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+        }
+        .slider-nav-item {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #fff;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+        .slider-nav-item.active {
+            background-color: #333;
+        }
+        .tour-info {
+            flex: 1;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            margin-left: 20px;
+        }
+        .news-section {
+            margin-top: 20px;
+            background-color: white;
+            padding: 20px;
+        }
+        .news-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #a8d8e0;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .news-header h2 {
+            margin: 0;
+            color: #a8d8e0;
+        }
+        .news-item {
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+        }
+        .news-item p {
+            margin: 5px 0;
+        }
+        .news-item p:first-child {
+            color: #a8d8e0;
+        }
+        .view-more {
+            display: block;
+            text-align: right;
+            margin-top: 20px;
+            color: #a8d8e0;
+            text-decoration: none;
+        }
+        footer {
+            background-color: #a8d8e0;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        .social-icons {
+            margin-top: 10px;
+            font-family: 'Poppins';font-size: 17px;
+        }
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/images/header_logo.png" alt="Sou Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#top">TOP</a></li>
+                <li><a href="#news">NEWS</a></li>
+                <li><a href="#live">LIVE/EVENT</a></li>
+                <li><a href="#discography">DISCOGRAPHY</a></li>
+                <li><a href="#profile">PROFILE</a></li>
+                <li><a href="#goods">GOODS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#fc">FC</a></li>
+                <li><a href="#special">SPECIAL SITE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide">
+                        <img src="/images/Banner 1.png" alt="Banner 1">
+                        <div class="slide-content">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="/images/Banner 2.png" alt="Banner 2">
+                        <div class="slide-content">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="/images/Banner 3.jpg" alt="Banner 3">
+                        <div class="slide-content">
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-nav">
+                    <span class="slider-nav-item active"></span>
+                    <span class="slider-nav-item"></span>
+                    <span class="slider-nav-item"></span>
+                </div>
+            </div>
+            <div class="tour-info">
+                <h2>センス・オブ・ワンダー</h2>
+                <p>1F Standing 6,500 yen (税込)</p>
+                <p>2F Seat 7,000 yen (税込)</p>
+                <h3>OSAKA</h3>
+                <p>2024/08/08 THU Zepp Namba</p>
+                <h3>NAGOYA</h3>
+                <p>2024/08/15 THU Zepp Nagoya</p>
+            </div>
+        </div>
+
+        <div class="news-section">
+            <div class="news-header">
+                <h2>NEWS</h2>
+                <span>NEWS LIVE/EVENT</span>
+            </div>
+            <div class="news-item">
+                <p>2024.9.29</p>
+                <p>【LIVE出演】「三月革命パシフィック展」2025 - リベンジの春」 オフィシャルHP先行受付開始</p>
+            </div>
+            <div class="news-item">
+                <p>2024.9.27</p>
+                <p>【Goods】Sou LIVE TOUR 2024「センス・オブ・ワンダー」グッズ事前販売決定</p>
+            </div>
+            <div class="news-item">
+                <p>2024.9.18</p>
+                <p>【Goods】Sou LIVE TOUR 2024「センス・オブ・ワンダー」パシフィコ横浜公演グッズ公開情報＆ガチャガチャのご案内</p>
+            </div>
+            <div class="news-item">
+                <p>2024.8.27</p>
+                <p>【LIVE出演】「三月革命パシフィック展」2025 - リベンジの春」</p>
+            </div>
+            <div class="news-item">
+                <p>2024.8.9</p>
+                <p>【Goods】Sou LIVE TOUR 2024「センス・オブ・ワンダー」パシフィコ横浜追加グッズ公開＆追加グッズ事前通販受付開始</p>
+            </div>
+            <a href="#" class="view-more">VIEW MORE</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Sou</p>
+        <div class="social-icons">
+            <a href="https://x.com/nico_nico_sou" target="_blank"><img src="/images/twitter.png" alt="Twitter"></a>
+            <a href="https://www.youtube.com/c/niconicoSou" target="_blank"><img src="/images/youtube.png" alt="Youtube"></a>
+            <a href="https://www.nicovideo.jp/user/25382626/mylist/35381695" target="_blank"><img src="/images/niconico.png" alt="niconico"></a>
+            <a href="https://line.me/R/ti/p/@sou_official?from=page&openQrModal=true&searchId=sou_official" target="_blank"><img src="/images/line.png" alt="Line"></a>
+            <a href="https://www.instagram.com/____sou/" target="_blank"><img src="/images/instagram.png" alt="Instagram"></a>
+            <a href="https://www.tiktok.com/@sou__official?lang=ja-JP" target="_blank"><img src="/images/tiktok.png" alt="TikTok"></a>
+            <a href="https://www.weibo.com/u/7394056269" target="_blank"><img src="/images/weibo.png" alt="Weibo"></a>
+            <a href="https://space.bilibili.com/514347794" target="_blank"><img src="/images/bilibili.png" alt="bilibili"></a>
+        </div>
+    </footer>
+    
+
+    <script>
+        const slider = document.querySelector('.slider');
+        const slides = document.querySelectorAll('.slide');
+        const navItems = document.querySelectorAll('.slider-nav-item');
+        let currentSlide = 0;
+
+        function goToSlide(n) {
+            slider.style.transform = `translateX(-${n * 100}%)`;
+            navItems.forEach((item, index) => {
+                item.classList.toggle('active', index === n);
+            });
+            currentSlide = n;
+        }
+
+        function nextSlide() {
+            goToSlide((currentSlide + 1) % slides.length);
+        }
+
+        navItems.forEach((item, index) => {
+            item.addEventListener('click', () => goToSlide(index));
+        });
+
+        setInterval(nextSlide, 5000); // Change slide every 5 seconds
+    </script>
+</body>
+</html>
