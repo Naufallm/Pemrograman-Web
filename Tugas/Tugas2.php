@@ -17,4 +17,4 @@ function printNumbers($n) {
 }
 
 // Example usage
-printNumbers(20); // Change 20 to any positive integer as desired
+printNumbers(10); // Change 20 to any positive integer as desired

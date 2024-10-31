@@ -1,18 +1,14 @@
 <?php
-namespace Classes;
+    namespace Classes;
 
-abstract class Item {
-    protected $name;
-    protected $price;
+    abstract class Item {
+        protected $name;
+        public $price;
 
-    public function __construct($name, $price) {
-        $this->name = $name;
-        $this->price = $price;
+        public function __construct($name, $price) {
+            $this->name = $name;
+            $this->price = $price;
+        }
+
+        abstract public function getDescription();
     }
-
-    public function getPrice() {
-        return $this->price;
-    }
-
-    abstract public function getDescription();
-}

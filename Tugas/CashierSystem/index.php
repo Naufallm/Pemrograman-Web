@@ -1,27 +1,40 @@
 <?php
-require_once __DIR__ . '/traits/Describable.php';
-require_once __DIR__ . '/classes/Item.php';
-require_once __DIR__ . '/classes/Food.php';
-require_once __DIR__ . '/classes/Beverage.php';
-require_once __DIR__ . '/classes/Order.php';
-require_once __DIR__ . '/classes/Cashier.php';
+require_once 'traits/Describable.php';
+require_once 'classes/Item.php';
+require_once 'classes/Food.php';
+require_once 'classes/Beverage.php';
+require_once 'classes/Menu.php';
+require_once 'classes/Restaurant.php';
+require_once 'classes/Order.php';
+require_once 'classes/Cashier.php';
 
+use Classes\Restaurant;
 use Classes\Food;
 use Classes\Beverage;
-use Classes\Order;
 use Classes\Cashier;
+use Classes\Order;
 
-// Create instances of items with prices in thousands
-$rawon = new Food("Rawon", 25000); 
-$teh = new Beverage("Teh", 3000); 
-$mendol = new Food("Mendol", 5000);
+// Membuat instance restoran dengan nama
+$restaurant = new Restaurant("Restoran Nusantara");
 
-// Create a new order and add items
-$order = new Order();
-$order->addItem($rawon);
-$order->addItem($teh);
-$order->addItem($mendol);
+// Menambahkan item ke menu restoran
+$restaurant->addItem(new Food("Nasi Goreng", 25000, 600, "Main Course"));
+$restaurant->addItem(new Beverage("Es Teh Manis", 5000, 250, false));
 
-// Process the order through the cashier
-$cashier = new Cashier();
+// Menampilkan menu restoran
+$restaurant->showMenu();
+
+// Membuat instance pesanan untuk nomor meja tertentu
+$order = new Order(1);
+
+// Menambahkan satu item makanan dan satu minuman ke pesanan
+$order->addItem(new Food("Nasi Goreng", 25000, 600, "Main Course"));
+$order->addItem(new Beverage("Es Teh Manis", 5000, 250, false));
+
+// Menampilkan pesanan
+$order->showOrder();
+
+$cashier = new Cashier("Megumi", 200);
+
+// Memproses pesanan
 $cashier->processOrder($order);
