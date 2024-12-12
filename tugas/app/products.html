@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zusammen Tea Shop - Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-content">
+        <div class="logo">Zusammen Tea Shop</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About</a>
+        </div>
+    </div>
+</nav>
+
+<section class="products" id="products">
+    <h2 class="section-title">Our Premium Teas</h2>
+    <div class="product-grid">
+
+        <div class="product-card">
+            <h3 class="product-title">Black Tea</h3>
+            <p class="product-price">Rp 15.000</p> 
+            <div class="product-options">
+                <label for="quantity-black-tea">Quantity:</label>
+                <input type="number" id="quantity-black-tea" value="1" min="1">
+
+                <label for="temperature-black-tea">Temperature:</label>
+                <select id="temperature-black-tea">
+                    <option value="hot">Hot</option>
+                    <option value="cold">Cold</option>
+                </select>
+
+                <label for="sugar-black-tea">Sugar Level:</label>
+                <select id="sugar-black-tea">
+                    <option value="none">None</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+            </div>
+            <button class="cta-button add-to-cart" data-product="Black Tea">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <h3 class="product-title">Green Tea</h3>
+            <p class="product-price">Rp 12.000</p> 
+            <div class="product-options">
+                <label for="quantity-green-tea">Quantity:</label>
+                <input type="number" id="quantity-green-tea" value="1" min="1">
+
+                <label for="temperature-green-tea">Temperature:</label>
+                <select id="temperature-green-tea">
+                    <option value="hot">Hot</option>
+                    <option value="cold">Cold</option>
+                </select>
+
+                <label for="sugar-green-tea">Sugar Level:</label>
+                <select id="sugar-green-tea">
+                    <option value="none">None</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+            </div>
+            <button class="cta-button add-to-cart" data-product="Green Tea">Add to Cart</button>
+        </div>
+
+        <div class="product-card"> 
+            <h3 class="product-title">Rose Tea</h3>
+            <p class="product-price">Rp 18.000</p> 
+            <div class="product-options">
+                <label for="quantity-rose-tea">Quantity:</label>
+                <input type="number" id="quantity-rose-tea" value="1" min="1">
+
+                <label for="temperature-rose-tea">Temperature:</label>
+                <select id="temperature-rose-tea">
+                    <option value="hot">Hot</option>
+                    <option value="cold">Cold</option>
+                </select>
+
+                <label for="sugar-rose-tea">Sugar Level:</label>
+                <select id="sugar-rose-tea">
+                    <option value="none">None</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+            </div>
+            <button class="cta-button add-to-cart" data-product="Rose Tea">Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Zusammen Tea Shop</h3>
+            <p>Malang</p>
+            <p>Indonesia</p>
+        </div>
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p>Phone: +6281230292962</p>
+            <p>Email: zusammentea@gmail.com</p>
+        </div>
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
