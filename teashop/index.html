@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zusammen Tea Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Added Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      body { 
+        /* Using the same gradient as the hero section */
+        background: linear-gradient(135deg, #f6e6cb 0%, #ffd5a5 100%);
+        font-family: 'Quicksand', sans-serif;
+        min-height: 100vh; /* Ensures the gradient covers the full viewport height */
+      }
+
+      /* Optional: Add a subtle pattern overlay */
+      body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.4) 0%, transparent 60%);
+        pointer-events: none;
+      }
+
+      #app {
+        position: relative;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
